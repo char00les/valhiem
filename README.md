@@ -1,2 +1,2 @@
-# valhiem
+# Valhiem
 Installation and Maintaining valhiem 
