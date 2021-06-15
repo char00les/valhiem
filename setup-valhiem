@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#Install any updates
+sudo apt update && sudo apt upgrade
+
+#Add repo needed for steamcmd
+sudo apt install software-properties-common
+sudo add-apt-repository multiverse
+sudo dpkg --add-architecture i386
+
+#Install any updates
+sudo apt update && sudo apt upgrade
+
+#Install these apps
+sudo apt install lib32gcc1 steamcmd
+
+
+#Determine where you want to install the game
+
+LOCATION="/steam/valhiem/"
+
+steamcmd +login anonymous +force_install_dir $LOCATION +app_update 896660 validate +exit
+
+steamcmd +login anonymous +force_install_dir $LOCATION +app_update 896660 validate +exit
+
+
+
+
